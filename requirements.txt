@@ -1,4 +1,5 @@
 numpy
 matplotlib
 pandas
+PyYAML
 astropy==3.2.3
