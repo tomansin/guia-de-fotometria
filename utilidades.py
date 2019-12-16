@@ -261,13 +261,11 @@ def Fotometria(imagenes, aperturas, anillos, dir_tablas='Tablas', forzar_escritu
         bkg_std = np.array(bkg_std)
         bkg_nsky = np.array(bkg_nsky)
 
-        # Área de la apertura
-        area=aperturas.to_pixel(wcs).area()
-
+       
         # realizo fotometria y guardo en tablas ecsv en dir_tablas
-        area=aperturas.to_pixel(wcs).area()
+        area_aper=aperturas.to_pixel(wcs).area()
         phot = aperture_photometry(data, aperturas, wcs=wcs)
-        phot['aper_bkg'] = bkg_mean*area
+        phot['aper_bkg'] = bkg_mean*area_aper
         phot['aper_sum_bkgsub']=phot['aperture_sum']-phot['aper_bkg']
         inst_mag=[]
         for aper_sum in phot['aper_sum_bkgsub']:
@@ -276,7 +274,7 @@ def Fotometria(imagenes, aperturas, anillos, dir_tablas='Tablas', forzar_escritu
             else:
                 inst_mag.append(np.nan)
         phot['inst_mag'] = inst_mag
-        err = error(phot['aperture_sum'], gain, area, bkg_std, bkg_nsky)
+        err = error(phot['aperture_sum'], gain, area_aper, bkg_std, bkg_nsky)
         phot['inst_mag_err'] = 1.0857 *  err/phot['aperture_sum']
         for col in phot.colnames:
             if col != 'celestial_center':
