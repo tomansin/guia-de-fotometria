@@ -2,10 +2,6 @@ numpy
 matplotlib
 pandas
 PyYAML
-os
-subprocess
-sys
-IPython
 astropy==3.2.3
 ccdproc==2.1
 photutils==0.7.2
