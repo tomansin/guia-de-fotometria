@@ -3,6 +3,6 @@ matplotlib
 pandas
 PyYAML
 astropy==3.2.3
-ccdproc==2.1
+ccdproc==2.0.1
 photutils==0.7.2
 reproject==0.6
