@@ -12,10 +12,10 @@ Partiendo de una serie temporal de imágenes astronómicas con formato FITS
 
 * **CURVAS DE LUZ:** La fotometría diferencial se obtiene luego de una serie de pasos detallados en el notebook **Analsis.ipynb**.
 
-## Probar estos notebook en la nube  
+### Probar estos notebooks en la nube  
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tansin-git/guia-de-fotometria/master)
 
-## Instalación de dependencias
+### Instalación de dependencias
 
 La instalación de **Astrometry.net**, instala **SEXTRACTOR**.
 Para instalar **Astrometry.net** en distribuciones basadas en Debian:
