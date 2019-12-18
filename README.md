@@ -1,4 +1,5 @@
 # Guia de fotometría diferencial
+Probar: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tansin-git/guia-de-fotometria/master)
 Esta guia consta de una serie de notebooks para realizar fotometría diferencial, utilizando **SEXTRACTOR**, **Astrometry.net** y las librerías de Python: **Numpy**, **Matplorlib**, **Pandas**, **Astropy** y **Photutils**.
 
 ## Como usar
