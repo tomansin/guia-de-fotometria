@@ -1,5 +1,4 @@
 # Guia de fotometría diferencial
-Probar: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tansin-git/guia-de-fotometria/master)
 
 Esta guia consta de una serie de notebooks para realizar fotometría diferencial, utilizando **SEXTRACTOR**, **Astrometry.net** y las librerías de Python: **Numpy**, **Matplorlib**, **Pandas**, **Astropy** y **Photutils**.
 
@@ -12,6 +11,9 @@ Partiendo de una serie temporal de imágenes astronómicas con formato FITS
 * **FOTOMETRÍA:** Para realizar la fotometría se usa el notebook **Fotometria.ipynb**. Creará un directorio con la fotometría para cada imágen  con los detalles del procedimiento. Por otro lado devolverá una tabla con las coordenadas celestes de las fuentes, y otra tabla con la fotometría como serie temporal.
 
 * **CURVAS DE LUZ:** La fotometría diferencial se obtiene luego de una serie de pasos detallados en el notebook **Analsis.ipynb**.
+
+## Probar estos notebook en la nube  
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tansin-git/guia-de-fotometria/master)
 
 ## Instalación de dependencias
 
