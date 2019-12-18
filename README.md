@@ -26,7 +26,10 @@ $ apt install astrometry.net
 De otra manera puede instalarlo desde la pagina:
 http://astrometry.net/use.html
 
-Para instalar las librerías de Python en conda:
+Luego tiene que descargar los indexs de:
+http://data.astrometry.net/
+
+Para instalar las librerías de Python con conda:
  
 ```bash  
 $ conda install numpy    
