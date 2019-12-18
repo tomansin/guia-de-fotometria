@@ -111,7 +111,12 @@ def Astrometria(imagenes, dir_salida, escala, n=20,forzar_escritura=False):
         height = str(hder['naxis2'])
         
         # corremos sextractor -> genera test.cat (archivo binario)
-        runCommand('sextractor '+imagenes.location+fname)
+        sex_config = 'sextractor/default.sex'
+        sex_param = 'sextractor/default.param'
+        sex_filter = 'sextractor/default.conv'
+        
+        runCommand('sextractor -c '+sex_config+' -PARAMETERS_NAME '
+                   +sex_param+' -FILTER_NAME '+sex_filter+' '+imagenes.location+fname)
         coords = 'test.cat'
         t = Table.read(coords)
         rad_mean = np.mean(np.sort(t['FLUX_RADIUS'])[::-1][:n])
