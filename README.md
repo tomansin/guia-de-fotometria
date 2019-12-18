@@ -1,5 +1,4 @@
 # Guia de fotometría diferencial
---------------
 Esta guia consta de una serie de notebooks para realizar fotometría diferencial, utilizando **SEXTRACTOR**, **Astrometry.net** y las librerías de Python: **Numpy**, **Matplorlib**, **Pandas**, **Astropy** y **Photutils**.
 
 ## Como usar
