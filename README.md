@@ -13,7 +13,7 @@ Partiendo de una serie temporal de imágenes astronómicas con formato FITS
 * **CURVAS DE LUZ:** La fotometría diferencial se obtiene luego de una serie de pasos detallados en el notebook **Analsis.ipynb**.
 
 ### Probar estos notebooks en la nube  
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tansin-git/guia-de-fotometria/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tomansin/guia-de-fotometria/master)
 
 ### Instalación de dependencias
 
